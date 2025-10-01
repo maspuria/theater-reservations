@@ -38,10 +38,11 @@ public class TheaterReservations {
         int ticketAmount = Integer.parseInt(tickets);
 
         // Print confirmation information
-
-
-
-
+        if (tickets > 1) {
+            System.out.println(ticketAmount + " tickets reserved for " + movieDate + " under " + lastName + ", " + firstName);
+        } else {
+            System.out.println(ticketAmount + " ticket reserved for " + movieDate + " under " + lastName + ", " + firstName);
+        }
 
     }
 }
